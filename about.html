@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Charles' Pages</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Customizations -->
+    <link href="css/custom.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+  </head>
+  <body>
+  
+	<!-- Fixed header -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Charles' Pages</a>
+			</div>
+			
+			<div class="navbar-collapse collapse"> <!-- nav collapse -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="#">About</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Admin & Dashboard</li>
+							<li><a href="#">Admin 1</a></li>
+							<li><a href="#">Admin 2</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Portfolio</li>
+							<li><a href="#">Portfolio 1</a></li>
+							<li><a href="#">Portfolio 2</a></li>
+						</ul>
+					</li>
+					<li><a href="#contact" data-toggle="modal">Contact</a></li>
+				</ul>
+			</div> <!-- /nav collapse -->
+		</div>
+	</div>
+	
+	
+	<div class="container">
+		<div class="jumbotron text-center col-sm-12">
+			<div class="jumbotron text-center col-sm-6">
+				<h1>About Us</h1>
+				<img src="img/koala.jpg" alt="Koala" class="img-circle" width="200px">
+				<h3>Tarts and Pies</h3>
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+			</div>
+			
+			<div class="jumbotron text-center col-sm-6">
+				<div class="jumbotron text-left col-sm-12">
+					<h3>The Team</h3>
+					<ul style="list-style-type:none">
+					<li><b class="glyphicon glyphicon-star"></b> Charles Erickson</li>
+					<li><b class="glyphicon glyphicon-camera"></b> Christian Joseph</li>
+					<li><b class="glyphicon glyphicon-briefcase"></b> Carlos Miguel</li>
+					<li><b class="glyphicon glyphicon-cog"></b> Cyrone James</li>
+					</ul>  
+
+				</div>
+				<div class="jumbotron text-left col-sm-12">
+					<h3>Contact Informations</h3>
+					<ul style="list-style-type:none">
+					<li><b class="glyphicon glyphicon-phone"></b> 905-4889509</li>
+					<li><b class="glyphicon glyphicon-earphone"></b> 02-7711-39</li>
+					<li><b class="glyphicon glyphicon-envelope"></b> tartsandpies@gmail.com</li>
+					</ul>  
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Fixed footer -->
+	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>© 2017 Charles' Pages.</p>
+			</div>
+			
+			<div class="navbar-text pull-right">
+				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+				<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+				<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	
+	<!-- Bootstrap core JavaScript
+	======================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	
+	<!-- Modal Forms -->
+	<div class="modal fade" id="contact" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal" role="form">
+					<div class="modal-header">
+						<h4>Contact</h4>
+					</div>
+					<div class="modal-body">	
+						<div class="form-group">
+							<label for="contact-name" class="col-sm-2 control-label">Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="contact-name" placeholder="First & Last Name">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="contact-email" class="col-sm-2 control-label">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="contact-name" placeholder="example@domain.com">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="contact-message" class="col-sm-2 control-label">Message</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" rows="4"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<button type="submit" class="btn btn-primary">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
